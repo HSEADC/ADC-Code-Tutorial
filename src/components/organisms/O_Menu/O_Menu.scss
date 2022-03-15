@@ -3,7 +3,13 @@
   padding: 40px 28px;
   box-shadow: 9px 9px 35px rgba(0, 0, 0, 0.09);
   border-radius: 10px;
-}
-.C_MenuItoms:last-child {
-  margin-top: 100px;
+
+  .C_MenuItems {
+    display: flex;
+    flex-direction: column;
+
+    &:last-child {
+      margin-top: 100px;
+    }
+  }
 }

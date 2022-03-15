@@ -1,0 +1,20 @@
+.A_MenuItem {
+  display: flex;
+  width: 304px;
+  padding: 20px 40px;
+  border-radius: 6px;
+  font-size: 20px;
+  font-weight: 300;
+  color: #426060;
+  cursor: pointer;
+  // align-items: center;
+
+  &:hover {
+    text-decoration: none;
+    background-color: #dcffff;
+  }
+
+  &.active {
+    background: red;
+  }
+}

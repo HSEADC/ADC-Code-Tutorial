@@ -1,5 +1,3 @@
-@import '../../components/quarks/Q_Icon.scss';
-
 :root {
   --blue: #005bff;
   --grey: #777;
@@ -14,8 +12,21 @@
   box-sizing: border-box;
 }
 
+html,
 body {
-  margin-left: 40%;
-  margin-top: 10%;
+  height: 100%;
+}
+
+body {
+  display: flex;
   font-family: 'Inter', Helvetica, Arial, sans-serif;
+
+  & > div {
+    display: flex;
+    margin: auto;
+
+    .A_Chip {
+      margin-right: 8px;
+    }
+  }
 }

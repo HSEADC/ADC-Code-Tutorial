@@ -1,7 +1,7 @@
 import React, { PureComponent } from 'react'
-import M_MenuItom from '../../molecules/M_MenuItom/M_MenuItom.jsx'
-import Q_MenuIcon from '../../quarks/Q_MenuIcon/Q_MenuIcon.jsx'
-import C_MenuItoms from '../../collections/C_MenuItoms/C_MenuItoms.jsx'
+import A_MenuItem from '../../atoms/A_MenuItem/A_MenuItem.jsx'
+// import Q_MenuIcon from '../../quarks/Q_MenuIcon/Q_MenuIcon.jsx'
+// import C_MenuItems from '../../collections/C_MenuItems/C_MenuItems.jsx'
 import './O_Menu.scss'
 
 export default class O_Menu extends PureComponent {
@@ -10,37 +10,23 @@ export default class O_Menu extends PureComponent {
   }
 
   render() {
+    const { menu } = this.props
+    const { top, bottom } = menu
+    const topMenuElements = []
+    const bottomMenuElements = []
+
+    top.forEach((item, i) => {
+      topMenuElements.push(<A_MenuItem {...item} />)
+    })
+
+    bottom.forEach((item, i) => {
+      bottomMenuElements.push(<A_MenuItem {...item} />)
+    })
+
     return (
       <div className="O_Menu">
-        <div className="C_MenuItoms">
-          <div className="M_MenuItom">
-            <div className="Q_MenuIcon"></div>
-            Text
-          </div>
-          <div className="M_MenuItom">
-            <div className="Q_MenuIcon"></div>
-            Text
-          </div>
-          <div className="M_MenuItom">
-            <div className="Q_MenuIcon"></div>
-            Text
-          </div>
-          <div className="M_MenuItom">
-            <div className="Q_MenuIcon"></div>
-            Text
-          </div>
-        </div>
-
-        <div className="C_MenuItoms">
-          <div className="M_MenuItom">
-            <div className="Q_MenuIcon"></div>
-            Text
-          </div>
-          <div className="M_MenuItom">
-            <div className="Q_MenuIcon"></div>
-            Text
-          </div>
-        </div>
+        <div className="C_MenuItems">{topMenuElements}</div>
+        <div className="C_MenuItems">{bottomMenuElements}</div>
       </div>
     )
   }

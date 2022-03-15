@@ -1,0 +1,40 @@
+.A_Chip {
+  position: relative;
+  padding: 6px 38px 6px 10px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 300;
+  color: #426060;
+  background-color: #b7fcfc;
+  cursor: default;
+  user-select: none;
+
+  .Q_Icon.cross {
+    position: absolute;
+    top: 6px;
+    right: 10px;
+    width: 20px;
+    height: 20px;
+    margin-left: 8px;
+    border-radius: 20px;
+    background-color: #d7ffff;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #5be7e7;
+    }
+  }
+
+  &.disabled {
+    color: #abd9d9;
+    background-color: #f2ffff;
+    cursor: default;
+
+    .Q_Icon.cross {
+      &:hover {
+        background-color: #d7ffff;
+        cursor: default;
+      }
+    }
+  }
+}
