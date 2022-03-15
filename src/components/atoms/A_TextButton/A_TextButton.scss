@@ -1,31 +1,28 @@
-.StateA_Button {
+.StateA_TextButton {
   margin-left: 40%;
 }
-.A_Button {
+.A_TextButton {
   font-size: 20px;
   color: #426060;
   cursor: pointer;
   display: inline-block;
-  background-color: #b7fcfc;
   padding: 14px 20px;
-  text-decoration: none;
+  text-decoration: underline;
   border-radius: 10px;
   font-weight: 500;
   margin-top: 20%;
 }
 
-.A_Button:hover {
-  text-decoration: none;
-  color: #426060;
-  background-color: #5be7e7;
+.A_TextButton:hover {
+  text-decoration: underline;
+  color: #5be7e7;
 }
 
-.A_Button:last-child {
+.A_TextButton:last-child {
   font-size: 20px;
   color: #abd9d9;
   cursor: default;
   display: inline-block;
-  background-color: #f2ffff;
   padding: 14px 20px;
   text-decoration: none;
   border-radius: 10px;

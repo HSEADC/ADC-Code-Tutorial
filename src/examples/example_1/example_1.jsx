@@ -1,8 +1,8 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import A_Button from '../../components/atoms/A_Button/A_Button.jsx'
+import O_Menu from '../../components/organisms/O_Menu/O_Menu.jsx'
 import './example_1.scss'
 
 document.addEventListener('DOMContentLoaded', () => {
-  ReactDOM.render(<A_Button />, document.body)
+  ReactDOM.render(<O_Menu />, document.body)
 })

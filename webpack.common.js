@@ -7,7 +7,11 @@ const path = require('path')
 module.exports = {
   entry: {
     example_1: './src/examples/example_1/example_1.jsx',
-    example_2: './src/examples/example_2/example_2.jsx'
+    example_2: './src/examples/example_2/example_2.jsx',
+    example_3: './src/examples/example_3/example_3.jsx',
+    example_4: './src/examples/example_4/example_4.jsx',
+    example_5: './src/examples/example_5/example_5.jsx',
+    example_6: './src/examples/example_6/example_6.jsx'
   },
   output: {
     filename: '[name]/[name].js',
@@ -58,6 +62,34 @@ module.exports = {
       template: './src/examples/example_2/example_2.html',
       filename: './example_2/example_2.html',
       chunks: ['example_2']
+    }),
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/examples/example_3/example_3.html',
+      filename: './example_3/example_3.html',
+      chunks: ['example_3']
+    }),
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/examples/example_4/example_4.html',
+      filename: './example_4/example_4.html',
+      chunks: ['example_4']
+    }),
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/examples/example_5/example_5.html',
+      filename: './example_5/example_5.html',
+      chunks: ['example_5']
+    }),
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/examples/example_6/example_6.html',
+      filename: './example_6/example_6.html',
+      chunks: ['example_6']
     })
   ],
   optimization: {

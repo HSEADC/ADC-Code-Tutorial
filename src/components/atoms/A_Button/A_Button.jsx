@@ -7,6 +7,11 @@ export default class A_Button extends PureComponent {
   }
 
   render() {
-    return <div className="A_Button">A_Button rendered</div>
+    return (
+      <div className="StateA_Button">
+        <div className="A_Button">Text</div>
+        <div className="A_Button">Text</div>
+      </div>
+    )
   }
 }
