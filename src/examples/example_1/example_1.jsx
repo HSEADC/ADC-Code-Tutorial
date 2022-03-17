@@ -13,8 +13,8 @@ const menu = {
     {
       text: 'Menu Item 2',
       icon: 'community',
-      url: 'https://facebook.com',
-      active: true
+      url: 'https://facebook.com'
+      // active: true
     },
     {
       text: 'Menu Item 1',

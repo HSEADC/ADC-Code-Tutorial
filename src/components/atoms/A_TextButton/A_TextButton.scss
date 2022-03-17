@@ -1,32 +1,19 @@
-.StateA_TextButton {
-  margin-left: 40%;
-}
 .A_TextButton {
+  position: relative;
+  padding: 14px 20px;
+  border-radius: 10px;
   font-size: 20px;
+  font-weight: 500;
   color: #426060;
   cursor: pointer;
-  display: inline-block;
-  padding: 14px 20px;
+  user-select: none;
   text-decoration: underline;
-  border-radius: 10px;
-  font-weight: 500;
-  margin-top: 20%;
-}
 
-.A_TextButton:hover {
-  text-decoration: underline;
-  color: #5be7e7;
-}
-
-.A_TextButton:last-child {
-  font-size: 20px;
-  color: #abd9d9;
-  cursor: default;
-  display: inline-block;
-  padding: 14px 20px;
-  text-decoration: none;
-  border-radius: 10px;
-  font-weight: 500;
-  margin-top: 20%;
-  margin-left: 10%;
+  &:hover {
+    color: #5be7e7;
+  }
+  &.disabled {
+    color: #abd9d9;
+    cursor: default;
+  }
 }
