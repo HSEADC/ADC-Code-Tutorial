@@ -16,11 +16,11 @@ export default class O_Menu extends PureComponent {
     const bottomMenuElements = []
 
     top.forEach((item, i) => {
-      topMenuElements.push(<A_MenuItem {...item} />)
+      topMenuElements.push(<A_MenuItem {...item} key={'top' + i} />)
     })
 
     bottom.forEach((item, i) => {
-      bottomMenuElements.push(<A_MenuItem {...item} />)
+      bottomMenuElements.push(<A_MenuItem {...item} key={'bottom' + i} />)
     })
 
     return (
