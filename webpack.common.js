@@ -15,7 +15,8 @@ module.exports = {
   },
   output: {
     filename: '[name]/[name].js',
-    path: path.resolve(__dirname, 'build')
+    path: path.resolve(__dirname, 'build'),
+    publicPath: '/'
   },
   module: {
     rules: [
@@ -41,6 +42,13 @@ module.exports = {
       {
         resourceQuery: /raw/,
         type: 'asset/source'
+      },
+      {
+        test: /\.svg/,
+        type: 'asset/resource',
+        generator: {
+          filename: 'images/[hash][ext][query]'
+        }
       }
     ]
   },
