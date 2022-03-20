@@ -1,23 +1,21 @@
 import React, { PureComponent } from 'react'
 import './O_Select.scss'
 import A_Input from '../../atoms/A_Input/A_Input.jsx'
-import C_OptionsList from '../../collections/C_OptionsList/C_OptionsList.jsx'
+import A_OptionItem from '../../atoms/A_OptionItem/A_OptionItem.jsx'
 
 export default class O_Select extends PureComponent {
   constructor(props) {
     super(props)
+
     this.state = {
       value: '',
       options: props.options,
       showOptions: false,
       disabled: props.disabled
     }
-    this.setVisibleOptions = this.setVisibleOptions.bind(this)
-    this.handleSelectOption = this.handleSelectOption.bind(this)
-    this.handleChangeValue = this.handleChangeValue.bind(this)
   }
 
-  setVisibleOptions(visible) {
+  setVisibleOptions = (visible) => {
     if (this.state.disabled) {
       return
     }
@@ -28,7 +26,7 @@ export default class O_Select extends PureComponent {
     }))
   }
 
-  handleSelectOption(id, value) {
+  handleSelectOption = (id, value) => {
     this.setState((prevState) => ({
       ...prevState,
       value: value,
@@ -36,7 +34,7 @@ export default class O_Select extends PureComponent {
     }))
   }
 
-  handleChangeValue(e) {
+  handleChangeValue = (e) => {
     this.setState((prevState) => ({
       ...prevState,
       value: e.target.value
@@ -46,6 +44,18 @@ export default class O_Select extends PureComponent {
   render() {
     const { placeholder } = this.props
     const { options, showOptions, value } = this.state
+    const optionElements = []
+
+    options.forEach((option, i) => {
+      optionElements.push(
+        <A_OptionItem
+          key={option.id}
+          id={option.id}
+          value={option.value}
+          onSelect={this.handleSelectOption}
+        />
+      )
+    })
 
     return (
       <div className="O_Select">
@@ -57,12 +67,8 @@ export default class O_Select extends PureComponent {
             this.setVisibleOptions(true)
           }}
         />
-        {showOptions && (
-          <C_OptionsList
-            options={options}
-            handleSelectOption={this.handleSelectOption}
-          />
-        )}
+
+        {showOptions && optionElements}
       </div>
     )
   }
