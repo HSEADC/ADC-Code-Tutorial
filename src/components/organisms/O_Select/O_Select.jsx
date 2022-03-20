@@ -1,7 +1,7 @@
 import React, { PureComponent } from 'react'
 import './O_Select.scss'
-import A_TextField from '../../atoms/A_Input/A_Input.jsx'
-import O_OptionsList from '../O_OptionsList/O_OptionsList.jsx'
+import A_Input from '../../atoms/A_Input/A_Input.jsx'
+import C_OptionsList from '../../collections/C_OptionsList/C_OptionsList.jsx'
 
 export default class O_Select extends PureComponent {
   constructor(props) {
@@ -49,7 +49,7 @@ export default class O_Select extends PureComponent {
 
     return (
       <div className="O_Select">
-        <A_TextField
+        <A_Input
           placeholder={placeholder}
           value={value}
           onChange={this.handleChangeValue}
@@ -58,7 +58,7 @@ export default class O_Select extends PureComponent {
           }}
         />
         {showOptions && (
-          <O_OptionsList
+          <C_OptionsList
             options={options}
             handleSelectOption={this.handleSelectOption}
           />

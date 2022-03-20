@@ -25,6 +25,6 @@ const options = [
 document.addEventListener('DOMContentLoaded', () => {
   ReactDOM.render(
     <O_Select placeholder="Введите данные" options={options} />,
-    document.body
+    document.body.appendChild(document.createElement('div'))
   )
 })
