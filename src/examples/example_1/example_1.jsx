@@ -6,36 +6,36 @@ import './example_1.scss'
 const menu = {
   top: [
     {
-      text: 'Menu Item 1',
-      icon: 'user',
+      text: 'Галерея',
+      icon: 'dashboard',
       url: 'https://instagram.com'
     },
     {
-      text: 'Menu Item 2',
-      icon: 'community',
+      text: 'Сообщения',
+      icon: 'messages',
       url: 'https://facebook.com'
       // active: true
     },
     {
-      text: 'Menu Item 1',
-      icon: 'user',
+      text: 'Заметки',
+      icon: 'pages',
       url: 'https://instagram.com'
     },
     {
-      text: 'Menu Item 2',
-      icon: 'community',
+      text: 'Профиль',
+      icon: 'user',
       url: 'https://facebook.com'
     }
   ],
   bottom: [
     {
-      text: 'Menu Item 1',
-      icon: 'user',
+      text: 'Помощь',
+      icon: 'help',
       url: 'https://instagram.com'
     },
     {
-      text: 'Menu Item 2',
-      icon: 'community',
+      text: 'Настройки',
+      icon: 'settings',
       url: 'https://facebook.com'
     }
   ]

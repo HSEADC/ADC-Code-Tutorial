@@ -4,5 +4,26 @@
   }
 
   &.user {
+    background-image: url('../../assets/images/roles.svg');
+  }
+
+  &.dashboard {
+    background-image: url('../../assets/images/dashboard.svg');
+  }
+
+  &.messages {
+    background-image: url('../../assets/images/messages.svg');
+  }
+
+  &.pages {
+    background-image: url('../../assets/images/pages.svg');
+  }
+
+  &.help {
+    background-image: url('../../assets/images/help.svg');
+  }
+
+  &.settings {
+    background-image: url('../../assets/images/settings.svg');
   }
 }

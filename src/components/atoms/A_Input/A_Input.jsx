@@ -1,6 +1,5 @@
 import React, { PureComponent } from 'react'
 import './A_Input.scss'
-// import Q_ChipCross from '../quarks/Q_ChipCross/Q_ChipCross.jsx'
 
 export default class A_Input extends PureComponent {
   constructor(props) {
@@ -8,17 +7,30 @@ export default class A_Input extends PureComponent {
   }
 
   render() {
-    const { placeholder, onChange, onFocus, onBlur, value } = this.props
-    console.log(placeholder)
+    const {
+      children,
+      onFocus,
+      onBlur,
+      placeholder,
+      disabled,
+      value,
+      onChange
+    } = this.props
+
     return (
-      <input
-        placeholder={placeholder}
-        className="A_Input"
-        onChange={onChange}
-        value={value}
-        onFocus={onFocus}
-        onBlur={onBlur}
-      />
+      <div className="A_InputContainer">
+        {children}
+        {!disabled && (
+          <input
+            placeholder={placeholder}
+            className="A_Input"
+            onBlur={onBlur}
+            onFocus={onFocus}
+            onChange={this.handleChangeValue}
+            value={value}
+          />
+        )}
+      </div>
     )
   }
 }
