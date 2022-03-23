@@ -6,25 +6,25 @@ import './example_6.scss'
 const options = [
   {
     id: '1',
-    value: 'grapefruit'
+    value: 'Ананас'
   },
   {
     id: '2',
-    value: 'lime'
+    value: 'Лемон'
   },
   {
     id: '3',
-    value: 'coconut'
+    value: 'Кокос'
   },
   {
     id: '4',
-    value: 'mango'
+    value: 'Мандарин'
   }
 ]
 
 document.addEventListener('DOMContentLoaded', () => {
   ReactDOM.render(
-    <O_Select placeholder="Введите данные" options={options} />,
+    <O_Select placeholder="Твой любимый фрукт" options={options} />,
     document.body.appendChild(document.createElement('div'))
   )
 })

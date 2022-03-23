@@ -1,0 +1,50 @@
+.O_Slider {
+  position: relative;
+  width: 760px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+
+  .O_SliderFrame {
+    width: 760px;
+    border-radius: 12px;
+    overflow: hidden;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+  }
+  .O_SliderFrame {
+    width: 760px;
+    border-radius: 12px;
+    overflow: hidden;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+  }
+
+  .O_SliderContent {
+    display: flex;
+    transition: transform 0.3s;
+  }
+
+  .O_SliderImage {
+    width: 760px;
+  }
+
+  .O_SliderControls {
+    width: 400px;
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-between;
+    margin: 0 auto;
+    align-items: center;
+
+    .Q_Icon {
+      width: 35px;
+      height: 35px;
+    }
+  }
+}

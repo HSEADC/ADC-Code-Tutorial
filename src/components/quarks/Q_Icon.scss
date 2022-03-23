@@ -26,4 +26,16 @@
   &.settings {
     background-image: url('../../assets/images/settings.svg');
   }
+  &.meatball-filled {
+    background-image: url('../../assets/images/meat-ball-icon-filled.svg');
+  }
+  &.meatball {
+    background-image: url('../../assets/images/meat-ball-icon.svg');
+  }
+  &.arrow-left {
+    background-image: url('../../assets/images/arrow-slider-left.svg');
+  }
+  &.arrow-right {
+    background-image: url('../../assets/images/arrow-slider-right.svg');
+  }
 }

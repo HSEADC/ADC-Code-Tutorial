@@ -26,7 +26,7 @@ export default class A_Input extends PureComponent {
             className="A_Input"
             onBlur={onBlur}
             onFocus={onFocus}
-            onChange={this.handleChangeValue}
+            onChange={onChange}
             value={value}
           />
         )}
