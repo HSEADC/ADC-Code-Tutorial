@@ -84,6 +84,10 @@ export default class O_MultiselectInput extends Component {
       />
     ))
 
+    const optionCollection = (
+      <div className="C_OptionsList">{optionElements}</div>
+    )
+
     return (
       <div className="O_MultiselectInput">
         <A_Input
@@ -93,7 +97,7 @@ export default class O_MultiselectInput extends Component {
         >
           {chips}
         </A_Input>
-        <div className="C_OptionsList">{showOptions && optionElements}</div>
+        {showOptions && optionCollection}
       </div>
     )
   }

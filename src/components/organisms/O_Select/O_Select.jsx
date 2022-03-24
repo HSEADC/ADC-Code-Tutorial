@@ -43,6 +43,7 @@ export default class O_Select extends PureComponent {
 
   render() {
     const { placeholder } = this.props
+
     const { options, showOptions, value } = this.state
     const optionElements = options.map((option) => (
       <A_OptionItem
@@ -52,6 +53,10 @@ export default class O_Select extends PureComponent {
         onSelect={this.handleSelectOption}
       />
     ))
+
+    const optionCollection = (
+      <div className="C_OptionsList">{optionElements}</div>
+    )
 
     return (
       <div className="O_Select">
@@ -63,7 +68,7 @@ export default class O_Select extends PureComponent {
             this.setVisibleOptions(true)
           }}
         />
-        <div className="C_OptionsList">{showOptions && optionElements}</div>
+        {showOptions && optionCollection}
       </div>
     )
   }

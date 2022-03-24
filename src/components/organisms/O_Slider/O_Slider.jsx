@@ -11,11 +11,9 @@ export default class O_Slider extends Component {
       imageUrls: props.imageUrls,
       activeIndex: 0
     }
-
-    this.updateIndex = this.updateIndex.bind(this)
   }
 
-  updateIndex(newIndex) {
+  updateIndex = (newIndex) => {
     if (newIndex < 0) {
       newIndex = this.state.imageUrls.length - 1
     } else if (newIndex >= this.state.imageUrls.length) {
@@ -31,10 +29,6 @@ export default class O_Slider extends Component {
   render() {
     const { activeIndex, imageUrls } = this.state
 
-    const iconClasses = classnames({
-      Q_Icon: true
-    })
-
     return (
       <div className="O_Slider">
         <div className="O_SliderFrame">
@@ -43,12 +37,7 @@ export default class O_Slider extends Component {
             style={{ transform: `translateX(-${activeIndex * 100}%)` }}
           >
             {imageUrls.map((imageUrl) => (
-              <img
-                key={imageUrl}
-                className="O_SliderImage"
-                src={imageUrl}
-                alt={imageUrl}
-              />
+              <img key={imageUrl} className="O_SliderImage" src={imageUrl} />
             ))}
           </div>
         </div>

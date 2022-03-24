@@ -1,14 +1,22 @@
 .O_MultiselectInput {
+  box-shadow: 9px 9px 35px rgba(0, 0, 0, 0.09);
+  margin: 20% auto;
+  width: 610px;
+  border-radius: 10px;
+
   .C_OptionsList {
-    width: 610px;
     margin-top: -15px;
-    border-radius: 10px;
     background-color: #ffff;
-    padding: 0px 20px 20px 20px;
-    box-shadow: 9px 9px 35px rgba(0, 0, 0, 0.09);
+    padding: 20px 20px 20px 20px;
   }
 
   .A_Chip {
     margin: 4px 4px;
+  }
+
+  .A_InputContainer {
+    box-shadow: none;
+    flex-wrap: nowrap;
+    flex-direction: row;
   }
 }
