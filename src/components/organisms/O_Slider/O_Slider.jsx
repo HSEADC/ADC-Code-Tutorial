@@ -1,8 +1,7 @@
-import classnames from 'classnames'
 import React, { Component } from 'react'
 import './O_Slider.scss'
-import Q_MeatBall from '../../quarks/Q_MeatBall/Q_MeatBall.jsx'
 import '../../quarks/Q_Icon.scss'
+import M_SliderController from '../../molecules/M_SliderController/M_SliderController.jsx'
 
 export default class O_Slider extends Component {
   constructor(props) {
@@ -41,24 +40,12 @@ export default class O_Slider extends Component {
             ))}
           </div>
         </div>
-        // Это нужно в отдельный компонент
-        <div className="M_SliderController">
-          <div
-            className="Q_Icon arrow-left"
-            onClick={() => this.updateIndex(activeIndex - 1)}
-          ></div>
 
-          <div className="Q_MeatBalls">
-            {imageUrls.map((img, index) => (
-              <Q_MeatBall key={index} selected={index === activeIndex} />
-            ))}
-          </div>
-
-          <div
-            className="Q_Icon arrow-right"
-            onClick={() => this.updateIndex(activeIndex + 1)}
-          ></div>
-        </div>
+        <M_SliderController
+          imageUrls={imageUrls}
+          activeIndex={activeIndex}
+          handleChangeIndex={this.updateIndex}
+        />
       </div>
     )
   }

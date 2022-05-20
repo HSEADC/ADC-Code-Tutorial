@@ -24,19 +24,4 @@
   .Q_SliderImage {
     width: 760px;
   }
-
-  .M_SliderController {
-    width: 400px;
-    display: flex;
-    flex-direction: row;
-
-    justify-content: space-between;
-    margin: 20px auto;
-    align-items: center;
-
-    .Q_Icon {
-      width: 35px;
-      height: 35px;
-    }
-  }
 }

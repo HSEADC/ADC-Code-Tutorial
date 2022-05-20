@@ -46,7 +46,7 @@ export default class O_SliderComments extends Component {
               }}
             >
               {slides.map(({ title, content }) => (
-                <div className="W_SliderCommentRail">
+                <div key={title} className="W_SliderCommentText">
                   <h3>{title}</h3>
                   <p>{content}</p>
                 </div>

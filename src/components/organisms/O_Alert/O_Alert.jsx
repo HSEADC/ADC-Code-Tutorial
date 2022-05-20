@@ -16,8 +16,8 @@ export default class O_Alert extends Component {
     const { content } = this.props
 
     return (
-      <div className="O_AlertContainer">
-        <div className="O_AlertContent">{content}</div>
+      <div className="O_Alert">
+        <div className="A_AlertContent">{content}</div>
         <A_Button text="Принять" handleClick={this.handleButtonClick} />
       </div>
     )

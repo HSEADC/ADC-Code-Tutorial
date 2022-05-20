@@ -18,7 +18,8 @@ module.exports = {
     example_10: './src/examples/example_10/example_10.jsx',
     example_11: './src/examples/example_11/example_11.jsx',
     example_12: './src/examples/example_12/example_12.jsx',
-    example_13: './src/examples/example_13/example_13.jsx'
+    example_13: './src/examples/example_13/example_13.jsx',
+    example_14: './src/examples/example_14/example_14.jsx'
   },
   output: {
     filename: '[name]/[name].js',
@@ -154,6 +155,13 @@ module.exports = {
       template: './src/examples/example_13/example_13.html',
       filename: './example_13/example_13.html',
       chunks: ['example_13']
+    }),
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/examples/example_14/example_14.html',
+      filename: './example_14/example_14.html',
+      chunks: ['example_14']
     })
   ],
   optimization: {

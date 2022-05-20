@@ -31,13 +31,13 @@ export default class S_Popup extends Component {
     const { showPopup } = this.state
     const { popupButtonText, popupTitle, children } = this.props
     return (
-      <div className="PopupWrapper">
+      <div className="S_Popup">
         <A_Button text={popupButtonText} handleClick={this.openPopup} />
         {showPopup && (
-          <div className="Popup">
+          <div className="W_PopupBackground">
             <div className="PopupBox">
               <div className="PopupBoxHeader">
-                <h2>{popupTitle}</h2>
+                <h3>{popupTitle}</h3>
                 <div className="Q_Icon close" onClick={this.closePopup}></div>
               </div>
               {children}

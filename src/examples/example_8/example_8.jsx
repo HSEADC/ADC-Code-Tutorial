@@ -1,6 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import O_Slider from '../../components/organisms/O_Slider/O_Slider.jsx'
+import './example_8.scss'
 
 const imageUrls = [
   'https://bipbap.ru/wp-content/uploads/2017/04/priroda_kartinki_foto_03.jpg',

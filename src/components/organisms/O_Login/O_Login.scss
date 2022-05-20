@@ -1,2 +1,12 @@
-.O_LoginContainer {
+.W_LoginContainer {
+  width: 570px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+
+  .A_InputContainer {
+    width: 570px;
+  }
 }
