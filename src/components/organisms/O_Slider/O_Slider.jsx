@@ -31,23 +31,24 @@ export default class O_Slider extends Component {
 
     return (
       <div className="O_Slider">
-        <div className="O_SliderFrame">
+        <div className="W_SliderFrame">
           <div
-            className="O_SliderContent"
+            className="C_SliderRail"
             style={{ transform: `translateX(-${activeIndex * 100}%)` }}
           >
             {imageUrls.map((imageUrl) => (
-              <img key={imageUrl} className="O_SliderImage" src={imageUrl} />
+              <img key={imageUrl} className="Q_SliderImage" src={imageUrl} />
             ))}
           </div>
         </div>
-        <div className="O_SliderControls">
+        // Это нужно в отдельный компонент
+        <div className="M_SliderController">
           <div
             className="Q_Icon arrow-left"
             onClick={() => this.updateIndex(activeIndex - 1)}
           ></div>
 
-          <div className="O_SliderStatus">
+          <div className="Q_MeatBalls">
             {imageUrls.map((img, index) => (
               <Q_MeatBall key={index} selected={index === activeIndex} />
             ))}

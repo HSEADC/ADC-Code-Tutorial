@@ -13,7 +13,12 @@ module.exports = {
     example_5: './src/examples/example_5/example_5.jsx',
     example_6: './src/examples/example_6/example_6.jsx',
     example_7: './src/examples/example_7/example_7.jsx',
-    example_8: './src/examples/example_8/example_8.jsx'
+    example_8: './src/examples/example_8/example_8.jsx',
+    example_9: './src/examples/example_9/example_9.jsx',
+    example_10: './src/examples/example_10/example_10.jsx',
+    example_11: './src/examples/example_11/example_11.jsx',
+    example_12: './src/examples/example_12/example_12.jsx',
+    example_13: './src/examples/example_13/example_13.jsx'
   },
   output: {
     filename: '[name]/[name].js',
@@ -114,6 +119,41 @@ module.exports = {
       template: './src/examples/example_8/example_8.html',
       filename: './example_8/example_8.html',
       chunks: ['example_8']
+    }),
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/examples/example_9/example_9.html',
+      filename: './example_9/example_9.html',
+      chunks: ['example_9']
+    }),
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/examples/example_10/example_10.html',
+      filename: './example_10/example_10.html',
+      chunks: ['example_10']
+    }),
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/examples/example_11/example_11.html',
+      filename: './example_11/example_11.html',
+      chunks: ['example_11']
+    }),
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/examples/example_12/example_12.html',
+      filename: './example_12/example_12.html',
+      chunks: ['example_12']
+    }),
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/examples/example_13/example_13.html',
+      filename: './example_13/example_13.html',
+      chunks: ['example_13']
     })
   ],
   optimization: {

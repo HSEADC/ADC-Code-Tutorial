@@ -1,0 +1,36 @@
+.PopupWrapper {
+  position: relative;
+}
+.Popup {
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  position: fixed;
+  background-color: #616a6a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.PopupBox {
+  width: 610px;
+  height: 298px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.PopupBoxHeader {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.Q_Icon.close {
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+}

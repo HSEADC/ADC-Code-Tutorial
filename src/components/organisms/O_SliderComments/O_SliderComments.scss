@@ -1,0 +1,54 @@
+.O_SliderComment {
+  margin: 10% auto;
+  position: relative;
+  width: 740px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+
+  .W_SliderCommentContent {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .W_SliderCommentOpenFrame {
+    width: 600px;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+  }
+
+  .C_SliderCommentRail {
+    display: flex;
+    transition: transform 0.3s;
+  }
+
+  .W_SliderCommentRail {
+    width: 600px;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .W_SliderCommentsStatus {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+
+    justify-content: center;
+    margin: 20px auto;
+    align-items: center;
+  }
+
+  .Q_Icon {
+    width: 35px;
+    height: 35px;
+  }
+}

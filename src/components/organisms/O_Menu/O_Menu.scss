@@ -4,6 +4,12 @@
   box-shadow: 9px 9px 35px rgba(0, 0, 0, 0.09);
   border-radius: 10px;
 
+  .W_MenuContent {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
   .C_MenuItems {
     display: flex;
     flex-direction: column;
@@ -12,4 +18,16 @@
       margin-top: 100px;
     }
   }
+}
+
+.Q_Icon.close {
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+}
+
+.Q_Icon.burger {
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
 }

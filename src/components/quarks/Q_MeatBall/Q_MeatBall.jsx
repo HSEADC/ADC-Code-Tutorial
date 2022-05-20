@@ -1,6 +1,4 @@
 import React, { PureComponent } from 'react'
-import MeatBallIcon from '../../../assets/images/meat-ball-icon.svg'
-import MeatBallIconFilled from '../../../assets/images/meat-ball-icon-filled.svg'
 import './Q_MeatBall.scss'
 
 export default class Q_MeatBall extends PureComponent {
@@ -10,13 +8,7 @@ export default class Q_MeatBall extends PureComponent {
 
   render() {
     const { selected } = this.props
-
-    return (
-      <img
-        className="Q_MeatBall"
-        src={selected ? MeatBallIconFilled : MeatBallIcon}
-        alt={''}
-      />
-    )
+    const className = selected ? 'Q_MeatBall Q_MeatBall_selected' : 'Q_MeatBall'
+    return <div className={className}></div>
   }
 }
