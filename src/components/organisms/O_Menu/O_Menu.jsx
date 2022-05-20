@@ -49,7 +49,7 @@ export default class O_Menu extends PureComponent {
         )}
         {showMenu && (
           <div className="W_MenuContent">
-            <div className="Q_Icon close" onClick={this.closePopup}></div>
+            <div className="Q_Icon close" onClick={this.closeMenu}></div>
             <div className="C_MenuItems">{topMenuElements}</div>
             <div className="C_MenuItems">{bottomMenuElements}</div>
           </div>
