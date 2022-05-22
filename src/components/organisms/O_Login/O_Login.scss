@@ -8,5 +8,11 @@
 
   .A_InputContainer {
     width: 570px;
+    background-color: #f4f4f4;
+    box-shadow: none;
+
+    .A_Input {
+      background-color: #f4f4f4;
+    }
   }
 }

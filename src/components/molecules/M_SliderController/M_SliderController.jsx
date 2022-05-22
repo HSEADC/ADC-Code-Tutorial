@@ -16,7 +16,7 @@ export default class M_SliderController extends React.Component {
           className="Q_Icon arrow-left"
           onClick={() => handleChangeIndex(activeIndex - 1)}
         ></div>
-        <div className="W_MeatBalls">
+        <div className="С_MeatBalls">
           {imageUrls.map((img, index) => (
             <Q_MeatBall key={index} selected={index === activeIndex} />
           ))}

@@ -35,8 +35,8 @@ export default class S_Popup extends Component {
         <A_Button text={popupButtonText} handleClick={this.openPopup} />
         {showPopup && (
           <div className="W_PopupBackground">
-            <div className="PopupBox">
-              <div className="PopupBoxHeader">
+            <div className="W_PopupBox">
+              <div className="W_PopupBoxHeader">
                 <h3>{popupTitle}</h3>
                 <div className="Q_Icon close" onClick={this.closePopup}></div>
               </div>

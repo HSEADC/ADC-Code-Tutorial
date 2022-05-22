@@ -5,10 +5,7 @@ import './example_13.scss'
 
 document.addEventListener('DOMContentLoaded', () => {
   ReactDOM.render(
-    <S_Popup
-      popupButtonText="Открыть попап"
-      popupTitle="Информация о подписке"
-    ></S_Popup>,
+    <S_Popup popupButtonText="Открыть" popupTitle="Заголовок"></S_Popup>,
     document.body
   )
 })

@@ -2,48 +2,48 @@
   position: relative;
   width: 200px;
   margin: 20% auto;
-}
 
-.W_PopupBackground {
-  width: 100%;
-  height: 100%;
-  z-index: 1000;
-  top: 0;
-  left: 0;
-  position: fixed;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+  .W_PopupBackground {
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
-.PopupBox {
-  width: 610px;
-  height: 298px;
-  padding: 20px;
-  background-color: white;
-  display: flex;
-  flex-direction: column;
-  box-shadow: 9px 9px 35px rgba(0, 0, 0, 0.09);
-  border-radius: 10px;
-}
+  .W_PopupBox {
+    width: 610px;
+    height: 298px;
+    padding: 20px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 9px 9px 35px rgba(0, 0, 0, 0.09);
+    border-radius: 10px;
+  }
 
-.PopupBoxHeader {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 100%;
-  align-items: center;
-}
+  .W_PopupBoxHeader {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
 
-h3 {
-  margin: 0;
-  font-size: 20px;
-  font-weight: 600;
-  color: #495151;
-}
+    h3 {
+      margin: 0;
+      font-size: 20px;
+      font-weight: 600;
+      color: #495151;
+    }
 
-.Q_Icon.close {
-  width: 35px;
-  height: 35px;
-  cursor: pointer;
+    .Q_Icon.close {
+      width: 35px;
+      height: 35px;
+      cursor: pointer;
+    }
+  }
 }
