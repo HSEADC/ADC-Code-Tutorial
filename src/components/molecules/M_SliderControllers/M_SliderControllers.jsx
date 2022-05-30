@@ -1,6 +1,6 @@
 import React from 'react'
 import Q_MeatBall from '../../quarks/Q_MeatBall/Q_MeatBall.jsx'
-import './M_SliderController.scss'
+import './M_SliderControllers.scss'
 
 export default class M_SliderController extends React.Component {
   constructor(props) {
@@ -11,7 +11,7 @@ export default class M_SliderController extends React.Component {
     const { handleChangeIndex, imageUrls, activeIndex } = this.props
 
     return (
-      <div className="M_SliderController">
+      <div className="M_SliderControllers">
         <div
           className="Q_Icon arrow-left"
           onClick={() => handleChangeIndex(activeIndex - 1)}

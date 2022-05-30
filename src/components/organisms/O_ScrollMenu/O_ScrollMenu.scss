@@ -1,0 +1,18 @@
+.O_ScrollMenu {
+  display: flex;
+  justify-content: center;
+  margin: 10% auto;
+  height: 300px;
+  overflow-x: hidden;
+  width: 360px;
+  padding: 40px 28px;
+  box-shadow: 9px 9px 35px rgba(0, 0, 0, 0.09);
+  border-radius: 10px;
+
+  .C_MenuItems {
+    display: flex;
+    flex-direction: column;
+    white-space: nowrap;
+    overflow-y: scroll;
+  }
+}

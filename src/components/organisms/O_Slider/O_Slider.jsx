@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import './O_Slider.scss'
 import '../../quarks/Q_Icon.scss'
-import M_SliderController from '../../molecules/M_SliderController/M_SliderController.jsx'
+import M_SliderControllers from '../../molecules/M_SliderControllers/M_SliderControllers.jsx'
 
 export default class O_Slider extends Component {
   constructor(props) {
@@ -41,7 +41,7 @@ export default class O_Slider extends Component {
           </div>
         </div>
 
-        <M_SliderController
+        <M_SliderControllers
           imageUrls={imageUrls}
           activeIndex={activeIndex}
           handleChangeIndex={this.updateIndex}
