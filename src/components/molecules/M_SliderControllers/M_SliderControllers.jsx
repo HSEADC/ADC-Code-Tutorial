@@ -2,7 +2,7 @@ import React from 'react'
 import Q_MeatBall from '../../quarks/Q_MeatBall/Q_MeatBall.jsx'
 import './M_SliderControllers.scss'
 
-export default class M_SliderController extends React.Component {
+export default class M_SliderControllers extends React.Component {
   constructor(props) {
     super(props)
   }

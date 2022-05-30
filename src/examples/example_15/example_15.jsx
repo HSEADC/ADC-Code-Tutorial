@@ -7,28 +7,28 @@ const menu = {
   top: [
     {
       text: 'Галерея',
-      icon: 'messages',
+
       url: 'https://instagram.com'
     },
     {
       text: 'Сообщения',
-      icon: 'messages',
+
       url: 'https://facebook.com'
       // active: true
     },
     {
       text: 'Заметки',
-      icon: 'messages',
+
       url: 'https://instagram.com'
     },
     {
       text: 'Профиль',
-      icon: 'messages',
+
       url: 'https://facebook.com'
     },
     {
       text: 'Настройки',
-      icon: 'messages',
+
       url: 'https://facebook.com'
     },
     {
