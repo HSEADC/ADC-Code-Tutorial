@@ -6,7 +6,7 @@ import './example_11.scss'
 
 document.addEventListener('DOMContentLoaded', () => {
   ReactDOM.render(
-    <S_Popup popupButtonText="Войти в систему" popupTitle="Вход в систему">
+    <S_Popup popupButtonText="Открыть popup" popupTitle="Вход в систему">
       <O_Login />
     </S_Popup>,
     document.body

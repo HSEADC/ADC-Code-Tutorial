@@ -12,6 +12,6 @@ document.addEventListener('DOMContentLoaded', () => {
     <S_Popup popupButtonText="Открыть попап" popupTitle="Информация о подписке">
       <O_Alert content={content} />,
     </S_Popup>,
-    document.body.appendChild(document.createElement('div'))
+    document.body
   )
 })

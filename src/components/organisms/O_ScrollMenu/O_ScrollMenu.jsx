@@ -1,6 +1,7 @@
 import React, { PureComponent } from 'react'
 import A_MenuItem from '../../atoms/A_MenuItem/A_MenuItem.jsx'
 import './O_ScrollMenu.scss'
+import '../../quarks/Q_Icon.scss'
 
 export default class O_ScrollMenu extends PureComponent {
   constructor(props) {
