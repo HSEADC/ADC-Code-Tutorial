@@ -1,6 +1,7 @@
 import classnames from 'classnames'
 import React, { PureComponent } from 'react'
 import './A_MenuItem.scss'
+import '../../quarks/Q_Icon.scss'
 
 export default class A_MenuItem extends PureComponent {
   constructor(props) {

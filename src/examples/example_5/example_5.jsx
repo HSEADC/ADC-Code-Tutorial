@@ -6,6 +6,6 @@ import './example_5.scss'
 document.addEventListener('DOMContentLoaded', () => {
   ReactDOM.render(
     <A_InputContainer placeholder="Твой любимый фрукт" />,
-    document.body.appendChild(document.createElement('div'))
+    document.body
   )
 })

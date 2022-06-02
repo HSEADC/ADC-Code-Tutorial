@@ -9,10 +9,10 @@ function handleClick() {
 
 document.addEventListener('DOMContentLoaded', () => {
   ReactDOM.render(
-    <>
+    <div>
       <A_TextButton text="Привет" handleClick={handleClick} />
       <A_TextButton text="Пока" disabled={true} handleClick={handleClick} />
-    </>,
+    </div>,
     document.body.appendChild(document.createElement('div'))
   )
 })

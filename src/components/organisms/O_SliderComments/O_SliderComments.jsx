@@ -3,8 +3,6 @@ import Q_MeatBall from '../../quarks/Q_MeatBall/Q_MeatBall.jsx'
 import './O_SliderComments.scss'
 import '../../quarks/Q_Icon.scss'
 
-const SLIDE_WIDTH = 600
-
 export default class O_SliderComments extends Component {
   constructor(props) {
     super(props)
@@ -42,7 +40,7 @@ export default class O_SliderComments extends Component {
             <div
               className="C_SliderCommentRail"
               style={{
-                transform: `translateX(-${activeIndex * SLIDE_WIDTH}px)`
+                transform: `translateX(-${activeIndex * 600}px)`
               }}
             >
               {slides.map(({ title, content }) => (
