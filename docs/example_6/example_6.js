@@ -819,7 +819,7 @@ document.addEventListener('DOMContentLoaded', function () {
   react_dom.render( /*#__PURE__*/react.createElement(O_Select, {
     placeholder: "\u0422\u0432\u043E\u0439 \u043B\u044E\u0431\u0438\u043C\u044B\u0439 \u0444\u0440\u0443\u043A\u0442",
     options: options
-  }), document.body.appendChild(document.createElement('div')));
+  }), document.body);
 });
 })();
 

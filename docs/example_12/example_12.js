@@ -912,7 +912,7 @@ document.addEventListener('DOMContentLoaded', function () {
     popupTitle: "\u0418\u043D\u0444\u043E\u0440\u043C\u0430\u0446\u0438\u044F \u043E \u043F\u043E\u0434\u043F\u0438\u0441\u043A\u0435"
   }, /*#__PURE__*/react.createElement(O_Alert, {
     content: content
-  }), ","), document.body.appendChild(document.createElement('div')));
+  }), ","), document.body);
 });
 })();
 

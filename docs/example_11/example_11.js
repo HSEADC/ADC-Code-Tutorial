@@ -1023,7 +1023,7 @@ var O_Login = /*#__PURE__*/function (_Component) {
 
 document.addEventListener('DOMContentLoaded', function () {
   react_dom.render( /*#__PURE__*/react.createElement(S_Popup, {
-    popupButtonText: "\u0412\u043E\u0439\u0442\u0438 \u0432 \u0441\u0438\u0441\u0442\u0435\u043C\u0443",
+    popupButtonText: "\u041E\u0442\u043A\u0440\u044B\u0442\u044C popup",
     popupTitle: "\u0412\u0445\u043E\u0434 \u0432 \u0441\u0438\u0441\u0442\u0435\u043C\u0443"
   }, /*#__PURE__*/react.createElement(O_Login, null)), document.body);
 });

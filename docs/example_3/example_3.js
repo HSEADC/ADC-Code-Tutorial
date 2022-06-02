@@ -743,7 +743,7 @@ function handleClick() {
 }
 
 document.addEventListener('DOMContentLoaded', function () {
-  react_dom.render( /*#__PURE__*/react.createElement(react.Fragment, null, /*#__PURE__*/react.createElement(A_TextButton, {
+  react_dom.render( /*#__PURE__*/react.createElement("div", null, /*#__PURE__*/react.createElement(A_TextButton, {
     text: "\u041F\u0440\u0438\u0432\u0435\u0442",
     handleClick: handleClick
   }), /*#__PURE__*/react.createElement(A_TextButton, {

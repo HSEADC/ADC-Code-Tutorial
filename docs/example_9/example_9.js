@@ -618,7 +618,7 @@ var A_OptionItem = /*#__PURE__*/function (_PureComponent) {
 document.addEventListener('DOMContentLoaded', function () {
   react_dom.render( /*#__PURE__*/react.createElement(A_OptionItem, {
     value: 'Арбуз'
-  }), document.body.appendChild(document.createElement('div')));
+  }), document.body);
 });
 })();
 

@@ -638,7 +638,6 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 
 
 
-var SLIDE_WIDTH = 600;
 
 var O_SliderComments = /*#__PURE__*/function (_Component) {
   O_SliderComments_inherits(O_SliderComments, _Component);
@@ -695,7 +694,7 @@ var O_SliderComments = /*#__PURE__*/function (_Component) {
       }, /*#__PURE__*/react.createElement("div", {
         className: "C_SliderCommentRail",
         style: {
-          transform: "translateX(-".concat(activeIndex * SLIDE_WIDTH, "px)")
+          transform: "translateX(-".concat(activeIndex * 600, "px)")
         }
       }, slides.map(function (_ref) {
         var title = _ref.title,

@@ -746,14 +746,14 @@ function handleClick() {
 }
 
 document.addEventListener('DOMContentLoaded', function () {
-  react_dom.render( /*#__PURE__*/react.createElement(react.Fragment, null, /*#__PURE__*/react.createElement(A_Chip, {
+  react_dom.render( /*#__PURE__*/react.createElement("div", null, /*#__PURE__*/react.createElement(A_Chip, {
     text: "Text",
     handleClick: handleClick
   }), /*#__PURE__*/react.createElement(A_Chip, {
     text: "Text",
     disabled: true,
     handleClick: handleClick
-  })), document.body.appendChild(document.createElement('div')));
+  })), document.body);
 });
 })();
 
